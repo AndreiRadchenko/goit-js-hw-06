@@ -1,0 +1,25 @@
+.image{
+    width: 480px;
+}
+
+.gallery{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1344px) {
+    .image {
+        width: 640px;
+    }
+}
