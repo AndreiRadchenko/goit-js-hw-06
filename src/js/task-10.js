@@ -18,7 +18,8 @@ const  createBoxes = amount => {
   return arrayOfBoxesLayouts;
 }
 
-const onCreateButtonClick = () => refs.insertingPlace.innerHTML = createBoxes(Number(refs.inputNumber.value));
+// const onCreateButtonClick = () => refs.insertingPlace.innerHTML = createBoxes(Number(refs.inputNumber.value));
+const onCreateButtonClick = () => refs.insertingPlace.insertAdjacentHTML('beforeEnd', createBoxes(Number(refs.inputNumber.value)));
 
 const onDestroyButtonClick = () => {
   refs.insertingPlace.innerHTML = '';

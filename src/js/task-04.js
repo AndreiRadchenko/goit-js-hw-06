@@ -15,8 +15,6 @@ function onIncrement() {
 }
 
 function onDecrement() {
-    if (counterValue > 0) {
       counterValue -= 1;
       refs.counterValue.textContent = counterValue;
-    }
 }
